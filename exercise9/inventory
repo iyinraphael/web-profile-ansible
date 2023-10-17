@@ -4,6 +4,9 @@ all:
       ansible_host: 172.31.27.157
     web02:
       ansible_host: 172.31.21.164
+    web03:
+      ansible_host: 172.31.31.68
+      ansible_user: ubuntu
     db01:
       ansible_host: 172.31.29.163
 
@@ -12,6 +15,7 @@ all:
       hosts:
         web01:
         web02:
+        web03:
     dbservers:
       hosts:
         db01:

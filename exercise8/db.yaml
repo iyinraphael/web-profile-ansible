@@ -2,10 +2,10 @@
 - name: DBserver setup
   hosts: dbservers
   become: yes
-  vars:
-    dbname: inventor
-    dbuser: tesla
-    dbpass: 'admin123'
+    #vars:
+    #dbname: inventor
+    #dbuser: tesla
+    #dbpass: 'admin123'
   tasks:
     - debug:
         msg: "The user name is {{dbuser}}"
